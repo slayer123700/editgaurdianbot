@@ -1,0 +1,15 @@
+{
+  "name": "edit-guardian-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot to delete edited messages unless authorized.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "YourName",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "telegraf": "^4.0.0"
+  }
+}
