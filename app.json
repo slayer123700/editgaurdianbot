@@ -1,15 +1,23 @@
 {
-  "name": "edit-guardian-bot",
-  "version": "1.0.0",
-  "description": "Telegram bot to delete edited messages unless authorized.",
-  "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
+  "name":  "Telegram edit message delete bot",
+  "description": "Telegram bot example using python-telegram-bot",
+  "repository": "https://github.com/AMANTYA1/EditGuardianBot",
+  "keywords": ["telegram", "bot", "python"],
+  "env": {
+    "TELEGRAM_TOKEN": {
+      "description": "7671461535:AAGOPau3s4b6g2pbJm5sRz2iqbhN0K5tfbA",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "6018803920",
+      "required": true
+    }
   },
-  "author": "YourName",
-  "license": "MIT",
-  "dependencies": {
-    "dotenv": "^16.0.0",
-    "telegraf": "^4.0.0"
-  }
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "stack": "heroku-22"
 }
